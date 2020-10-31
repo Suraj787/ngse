@@ -1,0 +1,192 @@
+{
+ "allow_events_in_timeline": 1,
+ "autoname": "naming_series:",
+ "creation": "2019-07-17 15:28:16.496683",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "naming_series",
+  "status",
+  "project",
+  "project_name",
+  "jobmaster",
+  "column_break_6",
+  "type",
+  "raised_by",
+  "raised_date",
+  "assigned_to",
+  "due_date",
+  "section_break_12",
+  "email_sent",
+  "description",
+  "section_break_15",
+  "issue",
+  "potential_solutions",
+  "results"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Task ID",
+   "options": "PRE.#####\nQR-.#####\nMR.#####\nDR.#####\nPR.#####\nSR.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nAssigned to team member\nAssigned to Vendor\nCancelled\nCritical\nDecision point\nLong overdue\nClosed"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project Id",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project_id.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jobmaster",
+   "fieldtype": "Link",
+   "label": "Jobmaster",
+   "options": "Jobmaster"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "Material\nDesign\nProduction\nQuality\nSales\nPayment"
+  },
+  {
+   "default": "user",
+   "fieldname": "raised_by",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Raised by",
+   "options": "User"
+  },
+  {
+   "default": "Today",
+   "fieldname": "raised_date",
+   "fieldtype": "Date",
+   "label": "Raised Date"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned to",
+   "options": "User"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email_sent",
+   "fieldtype": "Select",
+   "label": "Email Sent",
+   "options": "Not Sent\nSent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Title"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Text Editor",
+   "label": "ISSUE"
+  },
+  {
+   "fieldname": "potential_solutions",
+   "fieldtype": "Text Editor",
+   "label": "POTENTIAL SOLUTIONS"
+  },
+  {
+   "fieldname": "results",
+   "fieldtype": "Text Editor",
+   "label": "RESULTS"
+  }
+ ],
+ "modified": "2020-01-31 12:34:20.408952",
+ "modified_by": "Administrator",
+ "module": "NGSE",
+ "name": "Project Review",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "title_field": "title",
+ "track_changes": 1
+}

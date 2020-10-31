@@ -1,0 +1,54 @@
+{
+ "creation": "2019-06-15 14:19:02.852170",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "owner_type",
+  "column_break_5",
+  "employee",
+  "employee_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "owner_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Owner Type",
+   "options": "Job Owner\nDesign Owner\nMarketing Owner\nQuality Owner\nPlanning Owner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-20 17:04:28.747476",
+ "modified_by": "raghu@nandan.co.in",
+ "module": "NGSE",
+ "name": "Owners",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}

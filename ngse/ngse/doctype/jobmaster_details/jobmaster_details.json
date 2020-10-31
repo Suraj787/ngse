@@ -1,0 +1,62 @@
+{
+ "creation": "2015-07-12 10:19:03.199493",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "jobmaster",
+  "product_family",
+  "cbj",
+  "model",
+  "bom_version",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "jobmaster",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Jobmaster",
+   "options": "Jobmaster"
+  },
+  {
+   "fieldname": "product_family",
+   "fieldtype": "Data",
+   "label": "Product Family"
+  },
+  {
+   "fieldname": "cbj",
+   "fieldtype": "Column Break",
+   "label": "cbj"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model"
+  },
+  {
+   "fieldname": "bom_version",
+   "fieldtype": "Data",
+   "label": "BOM Version"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-02-03 09:44:18.105339",
+ "modified_by": "Administrator",
+ "module": "NGSE",
+ "name": "Jobmaster Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

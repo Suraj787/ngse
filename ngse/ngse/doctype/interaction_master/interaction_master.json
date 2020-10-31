@@ -1,0 +1,160 @@
+{
+ "autoname": "NGSE-IM.-.YY.-.MM.-.#####",
+ "creation": "2015-12-07 04:13:02.195109",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reference_doctype",
+  "cb1",
+  "reference_name",
+  "organization",
+  "sb1",
+  "date",
+  "responsible",
+  "person_interacted_with",
+  "result",
+  "remark",
+  "cb2",
+  "next_action_by",
+  "next_action_date",
+  "next_action_task",
+  "interaction_type",
+  "sb2",
+  "comments_section",
+  "type_of_interaction"
+ ],
+ "fields": [
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "Reference DocType",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Reference Name",
+   "options": "reference_doctype",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "search_index": 1
+  },
+  {
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "label": "Responsible",
+   "options": "User"
+  },
+  {
+   "fieldname": "person_interacted_with",
+   "fieldtype": "Data",
+   "label": "Person Interacted with"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Result",
+   "options": "\nStatus Quo\nWarmer\nColder\nClosed Lost\nClosed Won",
+   "search_index": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_action_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Next Action By",
+   "options": "User",
+   "search_index": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "next_action_date",
+   "fieldtype": "Date",
+   "label": "Next Action Date"
+  },
+  {
+   "fieldname": "next_action_task",
+   "fieldtype": "Small Text",
+   "label": "Next Action Task"
+  },
+  {
+   "fieldname": "sb2",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "comments_section",
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "label": "Comments Section"
+  },
+  {
+   "fieldname": "interaction_type",
+   "fieldtype": "Link",
+   "label": "Interaction type",
+   "options": "Type of Interaction"
+  },
+  {
+   "fieldname": "type_of_interaction",
+   "fieldtype": "Select",
+   "label": "Type of Interaction",
+   "options": "Cold Call\nFollow Up Call\nMail\nCold Visit\nFollow Up Visit\nExisting Customer Visit\nSMS or Whatsapp\nSkype or Webex"
+  }
+ ],
+ "modified": "2020-06-15 20:11:46.467716",
+ "modified_by": "Administrator",
+ "module": "NGSE",
+ "name": "Interaction Master",
+ "owner": "raghu@nandan.co.in",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

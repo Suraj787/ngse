@@ -1,0 +1,142 @@
+{
+ "allow_events_in_timeline": 1,
+ "creation": "2019-07-17 18:59:29.373047",
+ "description": "Set Default CC email address here ",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "opportunity_cc",
+  "quotation_cc",
+  "sales_order_cc",
+  "sales_invoice_cc",
+  "customer_cc",
+  "contact_cc",
+  "project_cc",
+  "pc_cc",
+  "data_5",
+  "opportunity_attach_document_print",
+  "quotation_attach_document_print",
+  "sales_order_attach_document_print",
+  "sales_invoice_attach_document_print",
+  "customer_attach_document_print",
+  "contact_attach_document_print",
+  "project_attach_document_print",
+  "purchase_order_attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "opportunity_cc",
+   "fieldtype": "Data",
+   "label": "Opportunity CC"
+  },
+  {
+   "fieldname": "quotation_cc",
+   "fieldtype": "Data",
+   "label": "Quotation CC"
+  },
+  {
+   "fieldname": "sales_order_cc",
+   "fieldtype": "Data",
+   "label": "Sales Order CC"
+  },
+  {
+   "fieldname": "sales_invoice_cc",
+   "fieldtype": "Data",
+   "label": "Sales Invoice CC"
+  },
+  {
+   "fieldname": "data_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "opportunity_attach_document_print",
+   "fieldtype": "Check",
+   "label": "Opportunity Attach Document Print"
+  },
+  {
+   "default": "0",
+   "fieldname": "quotation_attach_document_print",
+   "fieldtype": "Check",
+   "label": "Quotation Attach Document Print"
+  },
+  {
+   "default": "0",
+   "fieldname": "sales_order_attach_document_print",
+   "fieldtype": "Check",
+   "label": "Sales Order Attach Document Print"
+  },
+  {
+   "default": "0",
+   "fieldname": "sales_invoice_attach_document_print",
+   "fieldtype": "Check",
+   "label": "Sales Invoice Attach Document Print"
+  },
+  {
+   "fieldname": "customer_cc",
+   "fieldtype": "Data",
+   "label": "Customer CC"
+  },
+  {
+   "fieldname": "contact_cc",
+   "fieldtype": "Data",
+   "label": "Contact CC"
+  },
+  {
+   "fieldname": "project_cc",
+   "fieldtype": "Data",
+   "label": "Project CC"
+  },
+  {
+   "default": "0",
+   "fieldname": "customer_attach_document_print",
+   "fieldtype": "Check",
+   "label": "Customer Attach Document Print"
+  },
+  {
+   "default": "0",
+   "fieldname": "contact_attach_document_print",
+   "fieldtype": "Check",
+   "label": "Contact Attach Document Print"
+  },
+  {
+   "default": "0",
+   "fieldname": "project_attach_document_print",
+   "fieldtype": "Check",
+   "label": "Project Attach Document Print"
+  },
+  {
+   "fieldname": "pc_cc",
+   "fieldtype": "Data",
+   "label": "Purhase Order CC"
+  },
+  {
+   "default": "0",
+   "fieldname": "purchase_order_attachment",
+   "fieldtype": "Check",
+   "label": "Purchase Order Attachment"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2020-07-03 13:57:07.952090",
+ "modified_by": "raghu@nandan.co.in",
+ "module": "NGSE",
+ "name": "Default Email CC",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}

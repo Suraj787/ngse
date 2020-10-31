@@ -1,0 +1,284 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2015-06-07 15:38:45.774927",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_details",
+  "naming_series",
+  "financial_year",
+  "sales_order_no",
+  "project",
+  "customer",
+  "cbj01",
+  "product_family",
+  "model",
+  "bom_version",
+  "status",
+  "chassis_model",
+  "engine_no",
+  "chassis_no",
+  "section_break",
+  "job_owner",
+  "column_break",
+  "marketing_owner",
+  "cbjobmaster",
+  "design_in_charge",
+  "check_list",
+  "job_card_made",
+  "job_file_made",
+  "other_details",
+  "committed_delivery_date",
+  "customer_tag",
+  "delivery_location",
+  "ocb01",
+  "fabrication_by",
+  "job_start_date",
+  "status_now",
+  "specifications",
+  "specification",
+  "cylinders_n_hydraulics",
+  "kickoff_sheet",
+  "kickoff_sheet_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_details",
+   "fieldtype": "Section Break",
+   "label": "Job Details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Job Number",
+   "options": "201819.####",
+   "width": "89"
+  },
+  {
+   "default": "2018-2019",
+   "fieldname": "financial_year",
+   "fieldtype": "Link",
+   "label": "Financial Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "sales_order_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order No",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "cbj01",
+   "fieldtype": "Column Break",
+   "label": "cbj01"
+  },
+  {
+   "fieldname": "product_family",
+   "fieldtype": "Link",
+   "label": "Product Family",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Link",
+   "label": "Model",
+   "options": "Item"
+  },
+  {
+   "fieldname": "bom_version",
+   "fieldtype": "Link",
+   "label": "BOM Version",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Jobs in Process\nDelivered\nStatus Quo\nCancelled"
+  },
+  {
+   "fieldname": "chassis_model",
+   "fieldtype": "Data",
+   "label": "Chassis Model"
+  },
+  {
+   "fieldname": "engine_no",
+   "fieldtype": "Data",
+   "label": "Engine No"
+  },
+  {
+   "fieldname": "chassis_no",
+   "fieldtype": "Data",
+   "label": "Chassis No"
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_owner",
+   "fieldtype": "Link",
+   "label": "Job Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break",
+   "label": "Column Break"
+  },
+  {
+   "fieldname": "marketing_owner",
+   "fieldtype": "Link",
+   "label": "Marketing Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "cbjobmaster",
+   "fieldtype": "Column Break",
+   "label": "cbjobmaster"
+  },
+  {
+   "fieldname": "design_in_charge",
+   "fieldtype": "Link",
+   "label": "Design In charge",
+   "options": "User"
+  },
+  {
+   "fieldname": "check_list",
+   "fieldtype": "Section Break",
+   "label": "Check List"
+  },
+  {
+   "default": "0",
+   "fieldname": "job_card_made",
+   "fieldtype": "Check",
+   "label": "Job Card Made"
+  },
+  {
+   "default": "0",
+   "fieldname": "job_file_made",
+   "fieldtype": "Check",
+   "label": "Job File Made"
+  },
+  {
+   "fieldname": "other_details",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "committed_delivery_date",
+   "fieldtype": "Data",
+   "label": "Committed Delivery Date"
+  },
+  {
+   "fieldname": "customer_tag",
+   "fieldtype": "Data",
+   "label": "Customer Tag"
+  },
+  {
+   "fieldname": "delivery_location",
+   "fieldtype": "Data",
+   "label": "Delivery Location"
+  },
+  {
+   "fieldname": "ocb01",
+   "fieldtype": "Column Break",
+   "label": "ocb01"
+  },
+  {
+   "fieldname": "fabrication_by",
+   "fieldtype": "Data",
+   "label": "Fabrication by"
+  },
+  {
+   "fieldname": "job_start_date",
+   "fieldtype": "Date",
+   "label": "Job Start Date"
+  },
+  {
+   "fieldname": "status_now",
+   "fieldtype": "Small Text",
+   "label": "Status now"
+  },
+  {
+   "fieldname": "specifications",
+   "fieldtype": "Section Break",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Text Editor",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "cylinders_n_hydraulics",
+   "fieldtype": "Text Editor",
+   "label": "Components Spares"
+  },
+  {
+   "fieldname": "kickoff_sheet",
+   "fieldtype": "Section Break",
+   "label": "Kickoff Sheet"
+  },
+  {
+   "fieldname": "kickoff_sheet_data",
+   "fieldtype": "Text Editor",
+   "label": "Kickoff Sheet Data"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  }
+ ],
+ "modified": "2020-02-12 09:41:37.321723",
+ "modified_by": "Administrator",
+ "module": "NGSE",
+ "name": "Jobmaster",
+ "name_case": "Title Case",
+ "owner": "raghu@nandan.co.in",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "customer"
+}
