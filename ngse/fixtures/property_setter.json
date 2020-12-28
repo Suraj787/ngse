@@ -6440,7 +6440,7 @@
   "name": "Quotation-quotation_to-options", 
   "property": "options", 
   "property_type": "Text", 
-  "value": "Lead\nCustomer"
+  "value": "DocType"
  }, 
  {
   "_assign": null, 

@@ -375,7 +375,7 @@
    "modified_by": "Administrator", 
    "name": "Contact-linkedin_profile", 
    "no_copy": 0, 
-   "options": "Linkedin Profile", 
+   "options": null, 
    "owner": "Administrator", 
    "parent": null, 
    "parentfield": null, 

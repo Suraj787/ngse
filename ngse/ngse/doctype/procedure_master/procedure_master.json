@@ -55,7 +55,7 @@
   {
    "allow_on_submit": 0, 
    "fieldname": "naming_series", 
-   "fieldtype": "Data", 
+   "fieldtype": "Select", 
    "hidden": 0, 
    "ignore_user_permissions": 0, 
    "in_filter": 0, 
