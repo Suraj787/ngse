@@ -1,0 +1,156 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-07-02 09:57:49.960734",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "department",
+  "employee",
+  "created_by_name",
+  "date",
+  "format",
+  "subject",
+  "kind_attn",
+  "related_to_column",
+  "organization",
+  "address",
+  "address_display",
+  "reference_type",
+  "reference_name",
+  "email_to",
+  "letter_section",
+  "contents"
+ ],
+ "fields": [
+  {
+   "default": "NGSE/202021/",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Reference Number",
+   "options": "NGSE/202021/",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "created_by_name",
+   "fieldtype": "Data",
+   "label": "Created By Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "format",
+   "fieldtype": "Link",
+   "label": "Format",
+   "options": "Email Template"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "kind_attn",
+   "fieldtype": "Data",
+   "label": "Kind Attn"
+  },
+  {
+   "fieldname": "related_to_column",
+   "fieldtype": "Column Break",
+   "label": "Related To"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_display",
+   "fieldtype": "Small Text",
+   "label": "Address Display",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Link",
+   "label": "Reference Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference Name",
+   "options": "reference_type"
+  },
+  {
+   "fieldname": "email_to",
+   "fieldtype": "Table",
+   "label": "Email To",
+   "options": "Contact Child"
+  },
+  {
+   "fieldname": "letter_section",
+   "fieldtype": "Section Break",
+   "label": "Letter"
+  },
+  {
+   "fetch_from": "format.response",
+   "fetch_if_empty": 1,
+   "fieldname": "contents",
+   "fieldtype": "Text Editor",
+   "label": "Letter Contents"
+  }
+ ],
+ "modified": "2021-01-07 00:15:23.307247",
+ "modified_by": "Administrator",
+ "module": "NGSE",
+ "name": "Nandan Correspondance",
+ "name_case": "Title Case",
+ "owner": "raghu@nandan.co.in",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

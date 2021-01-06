@@ -1,0 +1,276 @@
+{
+ "autoname": "format:TENDER-{customer}-{due_date_of_submission}",
+ "creation": "2017-12-26 11:28:01.156190",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "customer_name",
+  "status_of_tender",
+  "tender_reference",
+  "date_of_tender_issue",
+  "due_date_of_submission",
+  "details",
+  "sector",
+  "product",
+  "potential_value",
+  "have_we_made_this_product",
+  "emd_status",
+  "penalty_clause",
+  "details_of_tender",
+  "description_of_tender",
+  "attachment_of_tender_document",
+  "any_legal_complications",
+  "payment_terms_implications",
+  "key_technical_points",
+  "td",
+  "tender_handled_by",
+  "competitor_data",
+  "key_personell_in_customer",
+  "internal_due_date_of_submission",
+  "submission",
+  "tender_attachment_1",
+  "tender_attachment_2",
+  "tender_attachment_3",
+  "tender_attachment_4",
+  "tender_attachment_5",
+  "td2",
+  "final_submission_authorized_by",
+  "final_price_submitted",
+  "final_terms_submitted",
+  "results",
+  "tender_result",
+  "tender_summary_of_competion",
+  "competitors_in_fray"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Customer",
+   "width": "194"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "default": "Tender Released",
+   "fieldname": "status_of_tender",
+   "fieldtype": "Select",
+   "label": "Status of tender",
+   "options": "Tender Released\nTender RFQ Reading\nTender Assigned Next Step\nTender Technicals\nTender Commercials\nTender Final Prep\nTender Submitted\nTender Rejected\nTender Regretted\nTender Won"
+  },
+  {
+   "fieldname": "tender_reference",
+   "fieldtype": "Data",
+   "label": "Tender Reference"
+  },
+  {
+   "fieldname": "date_of_tender_issue",
+   "fieldtype": "Date",
+   "label": "Date of Tender Issue"
+  },
+  {
+   "fieldname": "due_date_of_submission",
+   "fieldtype": "Date",
+   "label": "Due Date of Submission"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Column Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Select",
+   "label": "Sector",
+   "options": "GSE\nMHE\nDEF\nCAR\nBB"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fieldname": "potential_value",
+   "fieldtype": "Data",
+   "label": "Potential Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "have_we_made_this_product",
+   "fieldtype": "Check",
+   "label": "Have we made this product"
+  },
+  {
+   "fieldname": "emd_status",
+   "fieldtype": "Select",
+   "label": "EMD Status",
+   "options": "EMD NSIC Exemption\nEMD Bank Guarantee Compulsory\nEMD Cash Cumpolsury\nNo EMD"
+  },
+  {
+   "default": "No",
+   "fieldname": "penalty_clause",
+   "fieldtype": "Select",
+   "label": "Penalty Clause",
+   "options": "Yes - 5%\nYes - 10%\nNo\nYes - Unlimited"
+  },
+  {
+   "fieldname": "details_of_tender",
+   "fieldtype": "Section Break",
+   "label": "Details of Tender"
+  },
+  {
+   "fieldname": "description_of_tender",
+   "fieldtype": "Text Editor",
+   "label": "Description of Tender"
+  },
+  {
+   "fieldname": "attachment_of_tender_document",
+   "fieldtype": "Attach",
+   "label": "Attachment of Tender Document"
+  },
+  {
+   "fieldname": "any_legal_complications",
+   "fieldtype": "Long Text",
+   "label": "Any legal Complications"
+  },
+  {
+   "fieldname": "payment_terms_implications",
+   "fieldtype": "Long Text",
+   "label": "Payment Terms Implications"
+  },
+  {
+   "fieldname": "key_technical_points",
+   "fieldtype": "Text Editor",
+   "label": "Key Technical Points"
+  },
+  {
+   "fieldname": "td",
+   "fieldtype": "Column Break",
+   "label": "TD"
+  },
+  {
+   "fieldname": "tender_handled_by",
+   "fieldtype": "Link",
+   "label": "Tender Handled By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "competitor_data",
+   "fieldtype": "Long Text",
+   "label": "Competitor Data"
+  },
+  {
+   "fieldname": "key_personell_in_customer",
+   "fieldtype": "Small Text",
+   "label": "Key personell in customer"
+  },
+  {
+   "fieldname": "internal_due_date_of_submission",
+   "fieldtype": "Date",
+   "label": "Internal Due Date of Submission"
+  },
+  {
+   "fieldname": "submission",
+   "fieldtype": "Data",
+   "label": "Submission"
+  },
+  {
+   "fieldname": "tender_attachment_1",
+   "fieldtype": "Attach",
+   "label": "Tender Attachment 1"
+  },
+  {
+   "fieldname": "tender_attachment_2",
+   "fieldtype": "Attach",
+   "label": "Tender Attachment 2"
+  },
+  {
+   "fieldname": "tender_attachment_3",
+   "fieldtype": "Attach",
+   "label": "Tender Attachment 3"
+  },
+  {
+   "fieldname": "tender_attachment_4",
+   "fieldtype": "Attach",
+   "label": "Tender Attachment 4"
+  },
+  {
+   "fieldname": "tender_attachment_5",
+   "fieldtype": "Attach",
+   "label": "Tender Attachment 5"
+  },
+  {
+   "fieldname": "td2",
+   "fieldtype": "Column Break",
+   "label": "TD2"
+  },
+  {
+   "fieldname": "final_submission_authorized_by",
+   "fieldtype": "Link",
+   "label": "Final Submission Authorized By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "final_price_submitted",
+   "fieldtype": "Long Text",
+   "label": "Final Price Submitted"
+  },
+  {
+   "fieldname": "final_terms_submitted",
+   "fieldtype": "Long Text",
+   "label": "Final Terms Submitted"
+  },
+  {
+   "fieldname": "results",
+   "fieldtype": "Section Break",
+   "label": "Results"
+  },
+  {
+   "fieldname": "tender_result",
+   "fieldtype": "Select",
+   "label": "Tender Result",
+   "options": "Awarded to Nandan\nLost to Competiton\nCancelled\nResult awaited",
+   "width": "201"
+  },
+  {
+   "fieldname": "tender_summary_of_competion",
+   "fieldtype": "Text Editor",
+   "label": "Tender Summary of Competion"
+  },
+  {
+   "fieldname": "competitors_in_fray",
+   "fieldtype": "Long Text",
+   "label": "Competitors in fray"
+  }
+ ],
+ "modified": "2021-01-07 00:12:19.670657",
+ "modified_by": "Administrator",
+ "module": "NGSE",
+ "name": "Tenders Master",
+ "name_case": "Title Case",
+ "owner": "raghu@nandan.co.in",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
