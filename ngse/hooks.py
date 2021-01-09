@@ -9,10 +9,10 @@ app_icon = "icon-th-list"
 app_color = "#2E70D2"
 app_email = "kolate.sambhaji@gmail.com"
 app_version = "0.0.1"
-fixtures = ["Custom Field",
-"Property Setter",
-"Custom Script",
-"Print Format"]
+# fixtures = ["Custom Field",
+# "Property Setter",
+# "Custom Script",
+# "Print Format"]
 
 # Home Pages
 # ----------

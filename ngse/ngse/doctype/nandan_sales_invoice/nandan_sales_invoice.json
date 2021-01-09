@@ -11,7 +11,7 @@
   {
    "default": "2015-16", 
    "fieldname": "financial_year", 
-   "fieldtype": "Data", 
+   "fieldtype": "Link", 
    "label": "Financial Year", 
    "options": "Fiscal Year", 
    "permlevel": 0, 
